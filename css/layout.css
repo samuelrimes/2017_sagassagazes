@@ -1,0 +1,228 @@
+header{
+  height: 60px;
+  position: fixed;
+}
+header ul{
+  padding-top: 10px;
+  float:right;
+  margin-right: 75px;
+}
+
+header button{
+  display:inline;
+  margin-right: 15px;
+  padding:7px 3px 5px 3px;
+}
+
+header div{
+  padding: 10px;
+}
+
+header h1{
+  margin-left: 100px;
+  float: left;
+}
+
+main{
+  height: 4950px;
+  width: 800px;
+}
+
+main img{
+  padding-top: 10px;
+  width: 740px;
+  height: 350px;
+}
+
+#box{
+  width: 740px;
+  height: 350px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1 img{
+  height: 200px;
+  width: 400px;
+}
+
+main #nav{
+  margin-top: 20px;
+  padding: 10px 0px 0px 0px;
+  height: 60px;
+}
+
+main button{
+	height: 30px;
+  display:inline;
+  margin-left: 40px;
+  padding: 10px 5px 25px 5px;
+}
+
+#img{
+  width: 800px;
+  height: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5px;
+}
+
+#img img{
+  margin-left: 100px;
+  width: 250px;
+  height: 200px;
+}
+
+#conteudo p{
+  text-indent: 2em;
+}
+
+#row{
+	position: fixed;
+}
+
+div.tab button {
+    float: left;
+    cursor: pointer;
+    padding:10px 5px 25px 5px;
+    transition: 0.5s;
+    margin-bottom: 5px;
+}
+
+.tabcontent {
+    display: none;
+    padding: 10px 5px 25px 5px;
+}
+
+.dropbtn {
+    background-color: #4E3B5A;
+    color: white;
+    padding: 10px 5px 25px 5px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 350px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content li {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    bottom: 20px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #684E77;
+}
+#filme_1 p{
+  text-indent: 2em;
+  text-align: justify;
+}
+#filme_2 p{
+  text-indent: 2em;
+  text-align: justify;
+}
+#filme_3 p{
+  text-indent: 2em;
+  text-align: justify;
+}
+#filme_4 p{
+  text-indent: 2em;
+  text-align: justify;
+}
+#filme_5 p{
+  text-indent: 2em;
+  text-align: justify;
+}
+#filme_6 p{
+  text-indent: 2em;
+  text-align: justify;
+}
+#filme_7 p{
+  text-indent: 2em;
+  text-align: justify;
+}
+#filme_8 p{
+  text-indent: 2em;
+  text-align: justify;
+}
+#livro_1 p{
+  text-indent: 2em;
+  text-align: justify;
+}
+#livro_2 p{
+  text-indent: 2em;
+  text-align: justify;
+}
+#livro_3 p{
+  text-indent: 2em;
+  text-align: justify;
+}
+#livro_4 p{
+  text-indent: 2em;
+  text-align: justify;
+}
+#livro_5 p{
+  text-indent: 2em;
+  text-align: justify;
+}
+#livro_6 p{
+  text-indent: 2em;
+  text-align: justify;
+}
+#livro_7 p{
+  text-indent: 2em;
+  text-align: justify;
+}
+aside{
+  height: 1000px;
+  position: fixed overflow;
+  float: right;
+  width: 325px;
+  right: 10px;
+  position: relative;
+  background-color: #fff;
+}
+aside h1{
+  font-size: 15px;
+  color: #000;
+  text-align: left;
+  margin-left:5px;
+}
+aside div{
+  color: #000;
+  border: 1px solid #000;
+  width: 325px;
+  height: 95px;
+  margin-top: 50px;
+}
+aside img{
+  width: 144px;
+  height: 95px;
+}
+aside img:hover{
+  filter: brightness(70%);
+  transition: 0.5s;
+}
+aside p{
+  margin-top: 15px;
+  float: right;
+  margin-right: 5px;
+}

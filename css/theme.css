@@ -1,0 +1,115 @@
+html{
+  background-image: url(background-img4.jpg);
+  \\background-color: #fff;
+}
+header{
+  background-color: #fff;
+  color:#fff;
+  border: solid 1px #000;
+}
+header button{
+  border-radius: 5px;
+  text-decoration: none;
+  background-color: #000;
+  border:none;
+}
+button:hover{
+  background-color: #4E3B5A;
+  color: #fff
+}
+a:link{
+  color:#000;
+  text-decoration: none;
+}
+a:hover{
+  color: #000;
+  text-decoration: underline;
+}
+a:visited{
+  color:#000;
+  text-decoration: none;
+}
+header h1{
+  font-size: 25px;
+}
+header span{
+  color:#824386;
+}
+main{
+  background-color: #fff;
+  border: solid 1px #000;
+}
+#box{
+  box-shadow: 10px 10px 5px #442626;
+}
+h1{
+  text-align: center;
+}
+h1 p{
+   font-size: 20px;
+}
+main p{
+  text-align: center;
+}
+main #nav{
+  background-color: #4E3B5A;
+}
+main button{
+  background-color: #4E3B5A;
+  color: #fff;
+  border-radius: 5px;
+  border:none;
+}
+main button:hover{
+  background-color: #684E77;
+  text-decoration: none;
+}
+#img1{
+  float: left;
+}
+#img2{
+  float: right;
+}
+#conteudo{
+  float: right;
+}
+#conteudo p{
+  text-align: justify;
+  line-height: 1.5;
+}
+#row{
+  border: solid 1px #000;
+  color:#000;
+}
+div.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #4E3B5A;
+}
+div.tab button {
+    background-color: inherit;
+    border: none;
+    outline: none;
+}
+div.tab button:hover {
+    background-color: #684E77;
+}
+div.tab button.active {
+    background-color: #684E77;
+}
+.tabcontent {
+    border: 1px solid #ccc;
+    border-top: none;
+}
+#principal_1 p{
+    text-align: justify;
+    line-height: 1.5;
+}
+#principal_2 p{
+    text-align: justify;
+    line-height: 1.5;
+}
+#principal_3 p{
+    text-align: justify;
+    line-height: 1.5;
+}
