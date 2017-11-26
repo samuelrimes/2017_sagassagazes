@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Admin Page</title>
+	<meta charset="utf-8"/>
+	<script type="text/javascript">
+	    $('#Form1').on('submit', function () {
+ 
+		    // Armazenando informações do formulário em variáveis
+		    var id = $("input[name=id]").val();
+		    var titulo = $("input[name=titulo]").val();
+		    var img1 = $("input[name=img1]").val();
+		    var img2 = $("input[name=img2]").val();
+		    var texto = $("input[name=texto]").val();
+		    var data = $("input[name=data]").val();
+		    var diretor = $("input[name=diretor]").val();
+		    var premios = $("input[name=premios]").val();
+		 
+		    
+		    $.post(this.action, {nome: nome, email: email, mensagem: mensagem}, function (resposta) {
+		        console.log(resposta);
+		    });
+		 
+		    // Retorna FALSE para que o formulário não seja enviado de forma convencional
+		    return false;
+		 
+		});
+	</script>
+</head>
+<body>
+	<form  id="Form1" method="post" action="C:\Users\samuc\Documents\CEFET\HTML\sagassagazes\js\dados.js">
+		Id:<input type="text" name="id"/><br/>
+		Título:<input type="text" name="titulo"/><br/>
+		Img1:[url]<input type="text" name="img1"/><br/>
+		Img2:[url]<input type="text" name="img2"/><br/>
+		Texto:<input type="text" name="texto"/><br/>
+		Data<input type="text" name="data"/><br/>
+		Diretor:<input type="text" name="diretor"/><br/>
+		Prêmios:<input type="text" name="premios"/><br/>
+		<input type="submit" value="Enviar" class="submit"/>
+	</form>
+</body>
+</html>

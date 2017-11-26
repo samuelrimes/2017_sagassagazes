@@ -1,0 +1,137 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title>Harry Potter</title>
+    <link rel="icon" href="./css/S.png" type="image/x-icon" />
+	<link rel="stylesheet" href="./css/layouthp.css">
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <link rel="stylesheet" href="./css/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/font-awesome/css/font-awesome.min.css">
+    <script src="./js/dados.js"></script> 
+    <script type="text/javascript" src="javascript.js"></script>
+    <script type="text/javascript">
+        $(function(){
+            console.log(filmes);
+                $.each(filmes, function(index, filme){
+                    $("#principal")
+                        .append($("<div />").css("display","none").addClass('tabcontent').attr('id', 'filme_'+ filme.id +'')
+                        .append($("<div />").addClass("col-xs-12 col-sm-12 col-md-6").attr('id', 'img').append("<img />").attr("src", filme.img1))
+                        .append($("<div />").addClass("col-xs-12 col-sm-12 col-md-6").attr('id', 'img2').append("<img />").attr("src", filme.img2))
+                       .append($("<p />").text(filme.texto))
+                       .append($("<h4 />").text("Data de lançamento:").text(filme.data))
+                       .append($("<h4 />").text('Direção:').text(filme.diretor))
+                       .append($("<h4 />").text('Premiações:').text(filme.premios)));
+
+                    $(".tab1")
+                        .append($("<li />").append($("<button />").addClass("tablinks").attr("onclick", "openConteudo(event ,'filme_"+ filme.id + "')").text(filme.titulo)));
+                });
+                console.log(livros);
+                $.each(livros, function(index, livro){
+                    $("#principal")
+                        .append($("<div />").css("display","none").addClass('tabcontent').attr('id', 'filme_'+ livro.id +'')
+                        .append($("<div />").addClass("col-xs-12 col-sm-12 col-md-6").attr('id', 'img').append("<img />").attr("src", (livro.img1)))
+                        .append($("<div />").addClass("col-xs-12 col-sm-12 col-md-6").attr('id', 'img2').append("<img />").attr("src", (livro.img2)))
+                       .append($("<p />").text(livro.texto))
+                       .append($("<h4 />").text("Data de lançamento:").text(livro.data))
+                       .append($("<h4 />").text('Premiações:').text(livro.premios)));
+
+                    $(".tab2")
+                        .append($("<li />").append($("<button />").addClass("tablinks").attr("onclick", "openConteudo(event ,'filme_"+ livro.id + "')").text(livro.titulo)));
+                });
+            });
+
+    </script>
+   </head>
+   <body>
+	   	<header>
+            <div class="col-sm-12 col-md-4" id="h1"><h1><strong>SAGAS</strong><span><strong> SAGAZES</strong></span></h1></div>
+            <div class="col-sm-12 col-md-5" id="nav">
+	          <ul>
+	            <a href="./pagincial/inicial_page.html"><button>Home</button></a>
+	            <button>Sobre</button>
+	            <button>Outras Sagas</button>
+	            <button>Lojas</button>
+	            <button>Sites Oficiais</button>
+	            <button>Contato</button>
+	          </ul>
+	  	</header>
+
+    <main class="col-xs-12 col-sm-12 col-md-8 col-md-offset-1">
+        
+        <div class="col-xs-12 col-md-12" id="first-img"><img src="css/img.jpg" alt="Harry Potter"/></div>
+
+		<h1><img src="css/harrypotter.png" alt="Harry Potter"/> <p>Talvez uma das maiores sagas de todos os tempos. <br/>
+		Os livros e filmes desse universo estão entre os de maior sucesso.<br/>
+		Saiba mais sobre o Mundo Bruxo de J.K. Rowling.</p></h1>
+
+    	<div id="nav">
+  			<ul class="col-sm-12 col-md-8" id="ul1">
+	            <button class="tablinks" id="ul-button-1" onclick="openConteudo(event, 'conteudo')">Resenha Geral</button>
+	            <div class="dropdown" >
+                    <button class="dropbtn" id="ul-button-1">Filmes</button>
+                    <div class="dropdown-content" style="left: 0;">
+                       <div class="tab1">
+                       </div>
+                    </div>
+                </div>
+	            <div class="dropdown" >
+				  <button class="dropbtn" id="ul-button-1">Livros</button>
+				  <div class="dropdown-content" style="left: 0;">
+				    <div class="tab2">
+						
+					</div>
+				  </div>
+				</div>
+            </ul>
+            <ul class="col-md-4 col-sm-12" id="ul2">
+	            <button id="ul-button-2">Análises</button>
+	            <a href="https://www.pottermore.com/" target="_blank"><button id="ul-button-2">Site Oficial</button></a>
+         	</ul>
+        </div>
+
+        <div id="principal">
+
+        	<div id="conteudo" class="tabcontent" style="display: block;" >
+
+        	<div id="img" class="col-xs-12 col-sm-12 col-md-6"><img src="css/harry.jpg" alt="Harry Potter"/></div>
+
+        	<div id="img1" class="col-xs-12 col-sm-12 col-md-6"><img src="css/harry2.jpg" alt="Harry Potter"/></div>
+        	<br/>
+        		<p>Harry Potter é uma série de sete romances de alta fantasia escrita pela autora britânica J. K. Rowling. A série narra as aventuras de um jovem chamado Harry James Potter, que descobre aos 11 anos de idade que é um bruxo ao ser convidado para estudar na Escola de Magia e Bruxaria de Hogwarts. O arco de história principal diz respeito às amizades de Harry com outros bruxos de sua idade, como Ronald Weasley e Hermione Granger, e também com o diretor de Hogwarts Alvo Dumbledore, considerado o maior dos magos, e seus conflitos com o bruxo das trevas Lord Voldemort, que pretende se tornar imortal, conquistar o mundo dos bruxos, subjugar as pessoas não-mágicas e destruir todos aqueles que estão em seu caminho, especialmente Harry Potter, a quem ele considera seu maior rival.</p>
+
+        		<p>Desde o lançamento do primeiro romance, Harry Potter e a Pedra Filosofal, em 26 de junho de 1997, os livros ganharam uma imensa popularidade, aclamação da crítica e foram um sucesso comercial em todo o mundo. A série também recebeu algumas críticas, incluindo a preocupação com o tom cada vez mais sombrio conforme a história progredia. Até maio de 2015, já haviam sido vendidas 450 milhões de cópias em todo o mundo, tornando a série a best-seller da história, sendo traduzida para 73 idiomas. Os últimos quatro livros consecutivamente foram considerados os mais vendidos da história, sendo que o último livro vendeu cerca de 11 milhões de cópias nos Estados Unidos nas primeiras 24 horas após o seu lançamento.</p>
+
+        		<p>A série abrange vários gêneros, como fantasia, vida escolar e passagem entre a infância e a juventude (com elementos de mistério, suspense, aventura e romance), sendo que a história tem muitos significados e referências culturais. De acordo com Rowling, o tema principal é a morte. Há também muitas outras temáticas na série, como preconceito e corrupção</p>
+        		<p>Os livros foram originalmente impressos em inglês por duas grandes editoras, a Bloomsbury do Reino Unido e a Scholastic Press nos Estados Unidos. A série já foi publicada por muitas editoras em todo o mundo. A adaptação para uma série composta por oito filmes feita pela Warner Bros. Pictures se tornou a série cinematográfica mais assistida da história. Tamanho sucesso fez com que a marca Harry Potter chegasse ao valor de 15 bilhões de dólares Além disso, o parque temático The Wizarding World of Harry Potter foi introduzido em diversas unidades da Universal Parks & Resorts.</p>
+        	</div>
+        </div>
+    </main>
+    <aside class="col-sm-12 col-md-3">
+    	<h1>
+    		<strong><i class="fa fa-film" aria-hidden="true"></i>&nbsp; OUTRAS MATÉRIAS:</strong>
+    	</h1>
+    	<div>
+    		<a href="#"><img src="css/starwars.jpg" alt="Star Wars"></a>
+	    	<a href="#"><p><strong>Star Wars</strong><br/>Franquia de George <br/> Lucas</p></a>
+    	</div>
+    	<div>
+    		<a href="#"><img src="css/crepusculo.jpg"></a>		
+	    	<a href="#"><p><strong>Crepúsculo</strong><br/>Saga de E.L.James em <br/>detalhes</p></a>
+    	</div>
+    	<div>
+    		<a href="#"><img src="css/divergente.jpg"></a>	
+	    	<strong>Divergente</strong>
+      	</div>
+    	<div>
+    		<a href="#"><img src="css/senhordosaneis.jpg"></a>
+    		<strong>Senhor dos Anéis</strong>
+    	</div>
+    	<div>
+    		<a href="#"><img src="css/gameofthrones.jpg"></a>
+    		<strong>Game of Thrones</strong>
+    	</div>
+
+    </aside>
+   </body>
+ </html>

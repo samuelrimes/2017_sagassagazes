@@ -1,0 +1,84 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.slider {
+  width: 50%;
+  margin: 100px auto;
+}
+
+.slick-slide {
+  margin: 0px 20px;
+}
+
+.slick-slide img {
+  width: 100%;
+}
+
+.slick-slide img:hover {
+  width: 110%;
+  transition: 1s;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: black;
+}
+
+
+.slick-slide {
+  transition: all ease-in-out .3s;
+  opacity: .2;
+}
+    
+.slick-active {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.slick-current {
+  opacity: 1;
+  cursor: pointer;
+}
+
+header{
+  width: 100%;
+  background-color: #000;
+  color: #fff;
+  height: inherit;
+}
+
+header h1{
+  font-size: 25px;
+  font-family: Harlow Solid Italic;
+}
+
+header span{
+  color:#824386;
+}
+
+header ul{
+  margin-top: 4%;
+  text-align: center;
+}
+
+header button{
+  border-radius: 5px;
+  text-decoration: none;
+  background-color: #000;
+  border:none;
+  display:inline;
+  margin-right: 1.5%;
+  padding:0.7% 0.3% 0.5% 0.3%;
+}
+
+button:hover{
+  transition: 0.5s;
+  background-color: #4E3B5A;
+  color: #fff
+}
